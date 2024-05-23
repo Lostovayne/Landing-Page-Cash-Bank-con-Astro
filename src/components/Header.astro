@@ -1,8 +1,37 @@
+---
+import { Image } from "astro:assets";
+---
 
-
-<div class="mt-32 max-w-3xl " >
-    <h1 class="capitalize text-textPrimary font-extrabold text-6xl text-balance " >transaction control material made easier</h1>
-    <p class="text-[#5A7184] text-lg font-normal text-pretty max-w-xl" >
-        Cash Bank is constantly improving to move forward through transformation, innovation, data security, and superior human resources. Give meaning to a better life.
+<section class="flex mb-5">
+  <div class="mt-36 max-w-2xl w-full ">
+    <h1 class="capitalize text-textPrimary font-extrabold text-6xl text-balance">
+      transaction control material made easier
+    </h1>
+    <p class="text-[#5A7184] text-lg my-4 xl:my-8 font-normal text-pretty max-w-xl">
+      Cash Bank is constantly improving to move forward through transformation,
+      innovation, data security, and superior human resources. Give meaning to a better
+      life.
     </p>
-</div>
+
+    <div class=" flex  justify-start gap-5 items-center">
+        <button class=" bg-gradient-to-br from-primary shadow-md shadow-primary to-secondary  rounded-xl py-3.5 px-7 text-white font-semibold text-base ">
+            Create Free Account
+        </button>
+        <button class="  rounded-xl py-3.5 px-7 text-textPrimary  font-bold text-opacity-80 text-base ">
+            Find Out More
+        </button>
+    </div>
+
+
+  </div>
+  <div class=" mt-4  min-w-[950px] " >
+    <Image
+    src="/src/images/Card.svg"
+    alt="Header-Image"
+    class="w-full h-full object-fill "
+    quality={100}
+    width={1000}
+    height={1000}
+  />
+  </div>
+</section>
