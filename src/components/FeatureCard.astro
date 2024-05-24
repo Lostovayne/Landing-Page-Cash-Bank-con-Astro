@@ -17,13 +17,13 @@ const { imageSrc, className, title, description } = Astro.props;
 >
   <!--Image container-->
   <div class="w-24 h-24 flex justify-center items-center">
-    <Image src={imageSrc} alt={title} class={className} width={104} height={104} />
+    <Image src={imageSrc} alt={title} class={className} width={164} height={154} />
   </div>
 
   <h3 class="text-textPrimary font-bold text-xl text-balance">
     {title}
   </h3>
-  <p class="text-textSecondary text-[13px] font-normal">
+  <p class="text-textSecondary text-sm font-medium">
     {description}
   </p>
 </div>
