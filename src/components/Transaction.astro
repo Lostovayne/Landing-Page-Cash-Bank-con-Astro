@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import Bubble from "./Bubble.astro";
+---
+
+<section class="flex max-w-screen-2xl mx-auto mt-28">
+  <!--left side -->
+  <div class="w-1/2 flex flex-col justify-center items-start gap-8 pr-10">
+    <h2 class="text-textPrimary font-extrabold text-5xl text-balance">
+      Real Time Transaction Report
+    </h2>
+    <p
+      class="text-textSecondary font-medium text-base text-balance leading-loose"
+    >
+      With real time transactions, it will make easier for you to monitor
+      expeses and income i only one application and you can also share with
+      other families
+    </p>
+    <button
+      class="bg-gradient-to-br from-primary shadow-md shadow-primary to-secondary rounded-xl py-3.5 px-7 text-white font-semibold text-base"
+    >
+      Read More
+    </button>
+  </div>
+
+  <!--right side -->
+  <div class="w-1/2">
+    <div class="relative">
+      <Image
+        alt="latest-transaction-image"
+        src={"/images/lastestTransaction.webp"}
+        width={1300}
+        height={900}
+        quality={100}
+      />
+      <Image
+        alt="earning-source-image"
+        src={"/images/earningSource.webp"}
+        width={450}
+        height={250}
+        quality={100}
+        class="absolute -bottom-8 -left-24"
+      />
+
+      <Bubble class="top-1/2 -translate-y-1/2 right-0 size-[500px]" />
+    </div>
+  </div>
+</section>
