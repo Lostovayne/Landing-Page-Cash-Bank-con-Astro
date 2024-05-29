@@ -2,13 +2,9 @@
 
 Cash Bank es una Landing Page construida con Astro, Typescript y Tailwind CSS.
 
----
-
 ## Versión
 
 La versión actual del proyecto es 0.1.0
-
----
 
 ## Instalación del proyecto
 
@@ -25,15 +21,11 @@ cd proyecto
 pnpm install
 ```
 
----
-
 ## Scripts
 
 - `dev`: Inicia el servidor de desarrollo.
 - `build`: Crea la versión de producción del proyecto.
 - `preview`: Permite previsualizar tu proyecto en un entorno de producción local.
-
----
 
 ## Demo
 
