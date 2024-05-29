@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Button from "./Button.astro";
 ---
 
-<section class="flex py-10 mt-10">
+<section class="flex py-10 lg:mt-10">
   <div class="max-w-2xl pt-10 w-full">
     <h1
       class="capitalize text-textPrimary font-extrabold text-6xl text-balance leading-tight"
@@ -27,7 +27,7 @@ import Button from "./Button.astro";
       </button>
     </div>
   </div>
-  <div class="relative w-full aspect-square overflow-hidden">
+  <div class="relative hidden lg:block w-full aspect-square overflow-hidden">
     <Image
       src="/images/Card.svg"
       alt="Header-Image"

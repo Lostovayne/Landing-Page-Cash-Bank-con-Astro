@@ -2,9 +2,11 @@
 import { Image } from "astro:assets";
 ---
 
-<section class="flex justify-evenly items-center max-w-screen-2xl mx-auto mt-32 lg:px-16">
+<section
+  class="flex flex-col lg:flex-row justify-evenly items-center max-w-screen-2xl mx-auto mt-32 2xl:px-16"
+>
   <!--left side -->
-  <div class="w-1/2 relative">
+  <div class="w-full lg:w-1/2 relative">
     <Image
       src="/images/experienceImg.webp"
       alt="experience-image"
@@ -19,11 +21,11 @@ import { Image } from "astro:assets";
       width={400}
       height={250}
       quality={100}
-      class="absolute bottom-5 right-6 rounded-xl drop-shadow-lg"
+      class="absolute bottom-6 xl:bottom-8 right-0 xl:right-3 2xl:right-6 rounded-xl drop-shadow-lg max-md:w-48"
     />
   </div>
   <!--right side -->
-  <div class="w-1/2 flex  space-y-6 flex-col justify-between px-3 py-10">
+  <div class="w-full lg:w-1/2 flex space-y-6 flex-col justify-between px-3 py-10">
     <h2
       class="text-textPrimary font-extrabold text-5xl leading-snug text-balance max-w-xl"
     >
