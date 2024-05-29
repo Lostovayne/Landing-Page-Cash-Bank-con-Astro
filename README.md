@@ -29,7 +29,8 @@ pnpm install
 
 ## Demo
 
-![](https://cash-bank.pages.dev/)
+![image](https://github.com/Casadjes/Landing-Page-Cash-Bank-con-Astro/assets/115717042/d7dd594b-8514-4664-a5ec-eb4ec3032dd4)
+
 
 ## Dependecias
 
