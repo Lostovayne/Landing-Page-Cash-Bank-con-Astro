@@ -6,19 +6,19 @@ import Button from "./Button.astro";
 
 <section class="flex flex-col max-lg:gap-8 lg:flex-row max-w-screen-2xl mx-auto mt-28">
   <!--left side -->
-  <div class=" w-full  lg:w-1/2 flex flex-col justify-center items-start gap-8 lg:pr-10">
+  <div class="w-full lg:w-1/2 flex flex-col justify-center items-start gap-8 lg:pr-10">
     <h2 class="text-textPrimary font-extrabold text-5xl text-balance leading-snug">
       Real Time Transaction Report
     </h2>
-    <p class="text-textSecondary font-medium  text-base xl:text-balance leading-loose">
+    <p class="text-textSecondary font-medium text-base xl:text-balance leading-loose">
       With real time transactions, it will make it easier for you to monitor expenses and
       income in only one application and you can also share accounts with other families
     </p>
-    <Button  title="Read More" />
+    <Button title="Read More" />
   </div>
 
   <!--right side -->
-  <div class="w-full lg:w-1/2 px-2 ">
+  <div class="w-full lg:w-1/2 px-2">
     <div class="relative flex justify-end">
       <Image
         alt="latest-transaction-image"
@@ -34,10 +34,10 @@ import Button from "./Button.astro";
         width={387}
         height={234}
         quality={100}
-        class="absolute max-[480px]:bottom-8 bottom-12 max-[480px]:-left-3  -left-1  drop-shadow-lg rounded-3xl aspect-video w-40 md:w-96"
+        class="absolute max-[480px]:bottom-8 bottom-12 max-[480px]:-left-3 -left-1 drop-shadow-lg rounded-3xl aspect-video w-40 md:w-96"
       />
 
-      <Bubble class="top-1/2 -translate-y-1/2 -right-10 size-[500px]" />
+      <Bubble class="right-0 bottom-0" />
     </div>
   </div>
 </section>
