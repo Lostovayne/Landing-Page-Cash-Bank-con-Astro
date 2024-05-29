@@ -1,5 +1,5 @@
 ---
-import Image from 'astro/components/Image.astro';
+import Image from "astro/components/Image.astro";
 
 interface Props {
   imageSrc: string;
@@ -17,13 +17,19 @@ const { imageSrc, className, title, description } = Astro.props;
 >
   <!--Image container-->
   <div class="w-24 h-24 flex justify-center items-center">
-    <Image src={imageSrc} alt={title} class={className} width={164} height={154} />
+    <Image
+      src={imageSrc}
+      alt={title}
+      class={className}
+      width={164}
+      height={154}
+    />
   </div>
 
-  <h3 class="text-textPrimary font-bold text-xl text-balance">
+  <h3 class="text-textPrimary font-bold text-xl text-balance leading-relaxed">
     {title}
   </h3>
-  <p class="text-textSecondary text-sm font-medium">
+  <p class="text-textSecondary text-sm font-medium leading-loose">
     {description}
   </p>
 </div>
