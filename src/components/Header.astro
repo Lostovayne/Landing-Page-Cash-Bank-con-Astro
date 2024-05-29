@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import Button from "./Button.astro";
 ---
 
 <section class="flex py-10 mt-10">
@@ -13,16 +14,12 @@ import { Image } from "astro:assets";
       class="text-[#5A7184] text-lg my-4 xl:my-8 font-normal text-pretty max-w-xl leading-loose"
     >
       Cash Bank is constantly improving to move forward through transformation,
-      innovation, data security, and superior human resources. Give meaning to a
-      better life.
+      innovation, data security, and superior human resources. Give meaning to a better
+      life.
     </p>
 
     <div class="flex justify-start gap-5 pt-4 items-center">
-      <button
-        class="bg-gradient-to-br from-primary shadow-md shadow-primary to-secondary rounded-xl py-3.5 px-7 text-white font-semibold text-base"
-      >
-        Create Free Account
-      </button>
+      <Button title="Create Free Account" />
       <button
         class="rounded-xl py-3.5 px-7 text-textPrimary font-bold text-opacity-80 text-base"
       >
