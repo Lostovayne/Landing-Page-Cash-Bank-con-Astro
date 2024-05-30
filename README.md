@@ -36,3 +36,7 @@ pnpm install
 - `astro`: "^4.8.6",
 - `tailwindcss`: "^3.4.3",
 - `typescript`: "^5.4.5"
+
+
+
+

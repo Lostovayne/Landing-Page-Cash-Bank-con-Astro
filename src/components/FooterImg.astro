@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+
+const { class: className, src } = Astro.props;
+
+interface Props {
+  class?: string;
+  src: string;
+}
+---
+
+<Image
+  src={`/images/${src}.svg`}
+  alt={`${src} icon`}
+  class={`${className} size-10 2xl:size-14 py-1 object-contain cursor-pointer `}
+  width={164}
+  height={154}
+/>

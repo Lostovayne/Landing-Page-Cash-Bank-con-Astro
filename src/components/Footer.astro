@@ -1,6 +1,47 @@
 ---
 import { Image } from "astro:assets";
 import Button from "./Button.astro";
+import FooterItem from "./FooterItem.astro";
+import FooterImg from "./FooterImg.astro";
+
+const Services = [
+  {
+    name: "How It's Works",
+    href: "/",
+  },
+  {
+    name: "Features",
+    href: "/",
+  },
+  {
+    name: "Integrations",
+    href: "/",
+  },
+  {
+    name: "Pricing",
+    href: "/",
+  },
+];
+
+const Company = [
+  {
+    name: "About",
+    href: "/",
+  },
+
+  {
+    name: "Terms",
+    href: "/",
+  },
+  {
+    name: "Privacy Policy",
+    href: "/",
+  },
+  {
+    name: "Careers",
+    href: "/",
+  },
+];
 ---
 
 <section>
@@ -29,72 +70,30 @@ import Button from "./Button.astro";
   <div
     class="w-full h-auto xl:h-[500px] md:h-[600px] sm:h-[1100px] flex flex-col justify-center items-center p-5 bg-gradient-to-r from-[#2aa6da] to-[#1b7b77]"
   >
-    <div
-      class="w-[88%] flex flex-wrap gap-10 justify-center mt-12 xl: pt-[100px] md: pt-[100px] sm: pt-[100px]"
-    >
+    <div class="w-[88%] flex flex-wrap gap-10 justify-center mt-12 sm:pt-[100px]">
       <div class="flex-grow text-white p-7.5 w-full md:w-auto">
         <h2 class="py-5 text-2xl font-bold md: pt-[40px]">CashBank</h2>
-        <small>
-          Cashbank is a service or electronic wallet that interacts with various
-          platforms around the world
-        </small>
+        <p class="max-w-lg text-sm  md:text-base font-normal text-pretty">
+          Cashbank is a service or electronic wallet that interacts with various platforms
+          around the world
+        </p>
       </div>
       <div class="flex-grow text-white p-7.5 w-full md:w-auto">
         <h2 class="py-5 text-xl text-left">Services</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="py-2.5 text-lg font-light">How It's Works</li>
-          <li class="py-2.5 text-lg font-light">Features</li>
-          <li class="py-2.5 text-lg font-light">Integrations</li>
-          <li class="py-2.5 text-lg font-light">Pricing</li>
-        </ul>
+        <FooterItem listOptions={Services} />
       </div>
       <div class="flex-grow text-white p-7.5 w-full md:w-auto">
         <h2 class="py-5 text-xl text-left">Company</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="py-2.5 text-lg font-light">About</li>
-          <li class="py-2.5 text-lg font-light">Terms</li>
-          <li class="py-2.5 text-lg font-light">Privacy Policy</li>
-          <li class="py-2.5 text-lg font-light">Careers</li>
-        </ul>
+        <FooterItem listOptions={Company} />
       </div>
       <div class="flex-grow text-white p-7.5 w-full md:w-auto">
         <h2 class="py-5 text-xl text-left">Social Media</h2>
-        <div class="flex gap-2.5">
-          <Image
-            src="/images/facebook.svg"
-            alt="facebook icon"
-            class="h-9 w-10 py-1 object-contain cursor-pointer"
-            width={164}
-            height={154}
-          />
-          <Image
-            src="/images/twitter.svg"
-            alt="twitter icon"
-            class="h-9 w-10 py-1 object-contain cursor-pointer"
-            width={164}
-            height={154}
-          />
-          <Image
-            src="/images/whatsapp.svg"
-            alt="whatsapp icon"
-            class="h-9 w-10 py-1 object-contain cursor-pointer"
-            width={164}
-            height={154}
-          />
-          <Image
-            src="/images/youtube.svg"
-            alt="youtube icon"
-            class="h-9 w-10 py-1 object-contain cursor-pointer"
-            width={164}
-            height={154}
-          />
-          <Image
-            src="/images/instagram.svg"
-            alt="instagram icon"
-            class="h-9 w-10 py-1 object-contain cursor-pointer"
-            width={164}
-            height={154}
-          />
+        <div class="flex gap-2">
+          <FooterImg src="facebook" />
+          <FooterImg src="twitter" />
+          <FooterImg src="whatsapp" />
+          <FooterImg src="youtube" />
+          <FooterImg src="instagram" />
         </div>
       </div>
     </div>
