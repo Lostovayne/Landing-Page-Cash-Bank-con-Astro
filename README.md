@@ -1,57 +1,42 @@
-# Astro Starter Kit: Basics
+# CashBank
 
-```sh
-npm create astro@latest -- --template basics
+Cash Bank es una Landing Page construida con Astro, Typescript y Tailwind CSS.
+
+## Versión
+
+La versión actual del proyecto es 0.1.0
+
+## Instalación del proyecto
+
+Instrucciones paso a paso para instalar el proyecto localmente:
+
+```bash
+# Clona el repositorio
+git clone https://github.com/Casadjes/Landing-Page-Cash-Bank-con-Astro.git
+
+# Navega al directorio del proyecto
+cd proyecto
+
+# Instala las dependecias
+pnpm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Scripts
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- `dev`: Inicia el servidor de desarrollo.
+- `build`: Crea la versión de producción del proyecto.
+- `preview`: Permite previsualizar tu proyecto en un entorno de producción local.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Demo
 
-## 🚀 Project Structure
+![image](https://github.com/Casadjes/Landing-Page-Cash-Bank-con-Astro/assets/115717042/83187c98-7886-4866-8d91-6354f1381d9a)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Dependecias
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- `astro`: "^4.8.6",
+- `tailwindcss`: "^3.4.3",
+- `typescript`: "^5.4.5"
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 
 
