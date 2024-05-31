@@ -4,6 +4,7 @@ import Experience from "../components/Experience.astro";
 import Features from "../components/Features.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import InterfaceView from "../components/InterfaceView.astro";
 import Maps from "../components/Maps.astro";
 import Navbar from "../components/Navbar.astro";
 import Sponsors from "../components/Sponsors.astro";
@@ -12,8 +13,8 @@ import Transaction from "../components/Transaction.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Cash Bank" >
-  <header class=" relative max-w-screen-2xl mx-auto px-5 mt-5  ">
+<Layout title="Cash Bank">
+  <header class="relative max-w-screen-2xl mx-auto px-5 mt-5">
     <Navbar />
     <Bubble class="-left-20 -top-24" />
     <Header />
@@ -23,6 +24,7 @@ import Layout from "../layouts/Layout.astro";
     <Features />
     <Experience />
     <Transaction />
+    <InterfaceView />
     <Maps />
   </main>
   <Testimonials />
