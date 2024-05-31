@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
   <div class="w-full lg:w-1/2 relative">
     <Image
       src="/images/experienceImg.webp"
-      alt="experience-image"
+      alt="experience"
       width={600}
       height={450}
       quality={100}
@@ -25,35 +25,51 @@ import { Image } from "astro:assets";
     />
   </div>
   <!--right side -->
-  <div class="w-full lg:w-1/2 flex space-y-6 flex-col justify-between px-3 py-10">
+  <div
+    class="w-full lg:w-1/2 flex space-y-6 flex-col justify-between px-3 py-10"
+  >
     <h2
       class="text-textPrimary font-extrabold text-5xl leading-snug text-balance max-w-xl"
     >
       Have Experience In World Bank
     </h2>
-    <p class="text-textSecondary font-medium text-base leading-loose text-balance">
-      we have more than 15 years of experience in the field and have a number of users in
-      various countries around the world and are also suported in various foreign
-      languages
+    <p
+      class="text-textSecondary font-medium text-base leading-loose text-balance"
+    >
+      we have more than 15 years of experience in the field and have a number of
+      users in various countries around the world and are also suported in
+      various foreign languages
     </p>
     <!-- cards-->
     <div class="flex justify-around text-center">
       <!-- card 1-->
-      <div class="w-40 h-40 flex flex-col justify-center gap-3">
-        <span class="text-5xl font-extrabold text-textPrimary">15</span>
-        <span class="text-lg font-medium text-textSecondary">Years experience</span>
+      <div
+        class="p-2 flex flex-col min-w-24 sm:justify-center gap-3 w-24 sm:w-40 sm:h-40"
+      >
+        <span class="text-4xl md:text-5xl font-extrabold text-textPrimary"
+          >15</span
+        >
+        <span class="text-base md:text-lg font-medium text-textSecondary"
+          >Years experience</span
+        >
       </div>
       <!-- card 2-->
       <div
-        class="bg-gradient-to-br from-primary to-secondary rounded-xl w-40 h-40 flex flex-col justify-center gap-3"
+        class="p-2 flex flex-col min-w-24 sm:justify-center gap-3 h-auto w-24 sm:w-40 sm:h-40 bg-gradient-to-br from-primary to-secondary rounded-xl"
       >
-        <span class="text-5xl font-extrabold text-white">20k</span>
-        <span class="text-lg font-medium text-white">Local Customer</span>
+        <span class="text-4xl md:text-5xl font-extrabold text-white">20k</span>
+        <span class="text-base md:text-lg font-medium text-white"
+          >Local Customer</span
+        >
       </div>
       <!-- card 3-->
-      <div class="w-40 h-40 flex flex-col justify-center gap-3">
-        <span class="text-5xl font-extrabold text-textPrimary">30+</span>
-        <span class="text-lg font-medium text-textSecondary"
+      <div
+        class="p-2 flex flex-col min-w-24 sm:justify-center gap-3 h-auto w-24 sm:w-40 sm:h-40"
+      >
+        <span class="text-4xl md:text-5xl font-extrabold text-textPrimary"
+          >30+</span
+        >
+        <span class="text-base md:text-lg font-medium text-textSecondary"
           >Available In More Than Countries</span
         >
       </div>

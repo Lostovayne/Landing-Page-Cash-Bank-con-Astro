@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import Bubble from "./Bubble.astro";
+import Button from "./Button.astro";
+---
+
+<section
+  class="flex flex-col-reverse max-lg:gap-8 lg:flex-row max-w-screen-2xl mx-auto mt-28"
+>
+  <!--left side -->
+  <div class="w-full lg:w-1/2">
+    <div class="w-full relative">
+      <Image
+        alt="latest-transaction"
+        src={"/images/LatestTransaction.svg"}
+        width={800}
+        height={700}
+        quality={100}
+        class="drop-shadow-xl rounded-3xl object-contain"
+      />
+      <Image
+        alt="earnings-categories-card"
+        src={"/images/earningsCategories.svg"}
+        width={300}
+        height={500}
+        quality={100}
+        class="w-40 absolute right-4 min-[460px]:w-56 min-[540px]:w-60 md:w-auto md:right-12 -bottom-5 lg:right-0 drop-shadow-xl object-contain"
+      />
+      <Image
+        alt="credit-card"
+        src={"/images/creditCard.svg"}
+        width={250}
+        height={70}
+        quality={100}
+        class="w-40 absolute right-4 -top-2 min-[460px]:w-52 min-[540px]:w-56 md:right-12 md:-top-5 md:w-auto lg:right-0 drop-shadow-xl object-contain"
+      />
+
+      <Bubble class="left-0 top-0" />
+    </div>
+  </div>
+  <!--right side -->
+  <div
+    class="w-full lg:w-1/2 flex flex-col justify-center items-start gap-8 lg:pl-10"
+  >
+    <h2
+      class="capitalize text-textPrimary font-extrabold text-5xl text-pretty leading-snug"
+    >
+      modern and easy to use user interface view
+    </h2>
+    <p
+      class="text-textSecondary font-medium text-base xl:text-balance leading-loose"
+    >
+      With real time transactions, it will make it easier for you to monitor
+      expenses and income in only one application and you can also share
+      accounts with other families
+    </p>
+    <Button title="Read More" />
+  </div>
+</section>

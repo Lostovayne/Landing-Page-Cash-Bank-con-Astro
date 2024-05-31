@@ -4,15 +4,24 @@ import Bubble from "./Bubble.astro";
 import Button from "./Button.astro";
 ---
 
-<section class="flex flex-col max-lg:gap-8 lg:flex-row max-w-screen-2xl mx-auto mt-28">
+<section
+  class="flex flex-col max-lg:gap-8 lg:flex-row max-w-screen-2xl mx-auto mt-28"
+>
   <!--left side -->
-  <div class="w-full lg:w-1/2 flex flex-col justify-center items-start gap-8 lg:pr-10">
-    <h2 class="text-textPrimary font-extrabold text-5xl text-balance leading-snug">
+  <div
+    class="w-full lg:w-1/2 flex flex-col justify-center items-start gap-8 lg:pr-10"
+  >
+    <h2
+      class="text-textPrimary font-extrabold text-5xl text-balance leading-snug"
+    >
       Real Time Transaction Report
     </h2>
-    <p class="text-textSecondary font-medium text-base xl:text-balance leading-loose">
-      With real time transactions, it will make it easier for you to monitor expenses and
-      income in only one application and you can also share accounts with other families
+    <p
+      class="text-textSecondary font-medium text-base xl:text-balance leading-loose"
+    >
+      With real time transactions, it will make it easier for you to monitor
+      expenses and income in only one application and you can also share
+      accounts with other families
     </p>
     <Button title="Read More" />
   </div>
@@ -21,7 +30,7 @@ import Button from "./Button.astro";
   <div class="w-full lg:w-1/2 px-2">
     <div class="relative flex justify-end">
       <Image
-        alt="latest-transaction-image"
+        alt="lastest-transaction-card"
         src={"/images/LatestTransaction.svg"}
         width={800}
         height={700}
@@ -29,7 +38,7 @@ import Button from "./Button.astro";
         class="drop-shadow-xl rounded-3xl object-contain"
       />
       <Image
-        alt="earning-source-image"
+        alt="earning-sources-card"
         src={"/images/EarningSource.svg"}
         width={387}
         height={234}
