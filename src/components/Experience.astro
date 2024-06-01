@@ -1,5 +1,7 @@
 ---
 import { Image } from "astro:assets";
+import ExperienceImg from "../assets/ExperienceImg.svg"
+import TotalInvoice from "../assets/TotalInvoice.svg"
 ---
 
 <section
@@ -8,19 +10,24 @@ import { Image } from "astro:assets";
   <!-- left side -->
   <div class="w-full lg:w-1/2 relative">
     <Image
-      src="/images/experienceImg.webp"
-      alt="experience"
+      src={ExperienceImg}
+      alt="Imagen de usuarios experimentando la app"
       width={600}
       height={450}
       quality={100}
+      format="svg"
+      loading="lazy"
+      decoding="async"
       class="rounded-3xl object-cover w-full h-80 lg:h-full"
     />
     <Image
-      src="/images/TotalInvoice.svg"
+      src={TotalInvoice}
       alt="total-invoice"
       width={400}
       height={250}
       quality={100}
+      format="svg"
+      loading="eager"
       class="absolute bottom-6 lg:bottom-8 right-0 lg:right-3 2xl:right-6 rounded-xl drop-shadow-lg max-md:w-48 hidden md:block"
     />
   </div>

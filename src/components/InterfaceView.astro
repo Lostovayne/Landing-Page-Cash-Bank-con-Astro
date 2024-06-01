@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import Bubble from "./Bubble.astro";
 import Button from "./Button.astro";
+import CreditCard from "../assets/CreditCard.svg"
+
 ---
 
 <section
@@ -16,6 +18,9 @@ import Button from "./Button.astro";
         width={800}
         height={700}
         quality={100}
+        format="svg"
+        loading="lazy"
+        decoding="async"  
         class="drop-shadow-xl rounded-3xl object-contain"
       />
       <Image
@@ -24,14 +29,20 @@ import Button from "./Button.astro";
         width={300}
         height={500}
         quality={100}
+        format="svg"
+        loading="lazy"
+        decoding="async"  
         class="w-40 absolute right-4 min-[460px]:w-56 min-[540px]:w-60 md:w-auto md:right-12 -bottom-5 lg:right-0 lg:-bottom-14 xl:-bottom-5 drop-shadow-xl object-contain"
       />
       <Image
-        alt="credit-card"
-        src={"/images/creditCard.svg"}
+        alt="Nuestra nueva tarjeta de credito"
+        src={CreditCard}
         width={250}
         height={70}
         quality={100}
+        format="svg"
+        loading="lazy"
+        decoding="async"  
         class="w-40 absolute right-4 -top-2 min-[460px]:w-52 min-[540px]:w-56 md:right-12 md:-top-5 md:w-auto lg:right-0 lg:-top-9 xl:-top-3 drop-shadow-xl object-contain"
       />
 

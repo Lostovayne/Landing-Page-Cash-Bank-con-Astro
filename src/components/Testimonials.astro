@@ -1,24 +1,32 @@
 ---
+import { TestimonialData } from "../data";
+import TestimonialCard from "./TestimonialCard.astro";
 
+const { sliderPerViews, spaceBetween } = Astro.props;
 ---
 
-<div class="bg-red-100 mx-auto max-w-screen-2xl px-5">
+<div class="mx-auto max-w-screen-2xl px-5 bg-red-200">
   <swiper-container
-    class="mySwiper"
+    class="mySwiper overflow-hidden flex"
     pagination="true"
     pagination-clickable="true"
-    slides-per-view="3"
-    space-between="30"
+    slides-per-view={sliderPerViews}
+    space-between={spaceBetween}
     free-mode="true"
     centered-slides="true"
     autoplay-delay="2500"
     autoplay-disable-on-interaction="false"
     loop="true"
   >
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
+    {
+      TestimonialData.map(() => {
+        return (
+          <swiper-slide>
+            <TestimonialCard />
+          </swiper-slide>
+        );
+      })
+    }
   </swiper-container>
 </div>
 <style>
@@ -43,3 +51,6 @@
     object-fit: cover;
   }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+></script>

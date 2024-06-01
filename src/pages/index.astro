@@ -13,7 +13,7 @@ import Transaction from "../components/Transaction.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Cash Bank -  Banco de inversiones online">
+<Layout title="Cash Bank -  Banco de inversiones online"  >
   <header class="relative max-w-screen-2xl mx-auto px-5 mt-5">
     <Navbar />
     <Bubble class="-left-20 -top-24" />
@@ -27,6 +27,18 @@ import Layout from "../layouts/Layout.astro";
     <InterfaceView />
     <Maps />
   </main>
-  <Testimonials />
+
+  <section>
+    <!-- Testimonials Mobile -->
+    <div class="max-lg:block hidden">
+      <Testimonials sliderPerViews={1} spaceBetween={10} />
+    </div>
+
+    <!-- Testimonials Desktop -->
+    <div class="max-lg:hidden block">
+      <Testimonials sliderPerViews={3} spaceBetween={30} />
+    </div>
+  </section>
+
   <Footer />
 </Layout>

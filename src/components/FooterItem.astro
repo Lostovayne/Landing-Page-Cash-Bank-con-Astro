@@ -10,7 +10,16 @@ interface Props {
   {
     listOptions.map(({ name, href }) => (
       <li class="text-sm md:text-base  xl:text-lg font-normal transition-colors hover:text-primary">
-        <a href={href}>{name} </a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          class="hover:text-primary"
+          title="Links a nuestras redes sociales"
+          href={href}
+          aria-label={`Links a nuestras redes sociales ${name}`}
+        >
+          {name}{" "}
+        </a>
       </li>
     ))
   }
