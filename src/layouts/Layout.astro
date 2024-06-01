@@ -9,15 +9,40 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Landing Page para proyecto de banco e inversiones online"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="theme-color " content="#ffffff" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href="https://cash-bank.cloud" />
+ <!-- Charset y Viewport ya están incluidos -->
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <!-- Título dinámico y Descripción SEO -->
+ <title>{title}</title>
+ <meta name="description" content="Landing Page para proyecto de banco e inversiones online" />
+
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website" />
+ <meta property="og:url" content="https://cash-bank.cloud/" />
+ <meta property="og:title" content="{title}" />
+ <meta property="og:description" content="Landing Page para proyecto de banco e inversiones online" />
+ <meta property="og:image" content="https://cash-bank.cloud/images/uber.webp" /> <!-- Cambiar URL de la imagen -->
+
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary_large_image" />
+ <meta property="twitter:url" content="https://cash-bank.cloud/" />
+ <meta property="twitter:title" content="{title}" />
+ <meta property="twitter:description" content="Landing Page para proyecto de banco e inversiones online" />
+ <meta property="twitter:image" content="https://cash-bank.cloud/images/twitter.webp" /> <!-- Cambiar URL de la imagen -->
+
+ <!-- Otros metas importantes -->
+ <meta name="theme-color" content="#ffffff" /> <!-- Asegúrate de que el color refleje tu marca -->
+ <meta name="robots" content="index, follow" /> <!-- Cambiado a index, follow para permitir la indexación -->
+ <meta name="author" content="Grupo de Desarrollo de Software" />
+ <meta name="copyright" content="Copyright © 2024" />
+
+ <!-- Favicons y Touch Icons -->
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+ <!-- Canonical URL -->
+ <link rel="canonical" href="https://cash-bank.cloud" />
+
     <title>{title}</title>
   </head>
   <body>
