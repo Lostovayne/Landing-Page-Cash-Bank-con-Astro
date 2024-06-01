@@ -15,7 +15,7 @@ Este proyecto es una Landing Page para un proyecto de banco e inversiones online
 4. Ejecuta `pnpm start` para iniciar el servidor de desarrollo.
 
 ## Uso
-Una vez que el servidor esté en funcionamiento, puedes acceder a la Landing Page a través de tu navegador web visitando `http://localhost:3000`.
+Una vez que el servidor esté en funcionamiento, puedes acceder a la Landing Page a través de tu navegador web visitando `http://localhost:4321`.
 
 ## Características
 - Página de inicio con información sobre el proyecto de banco e inversiones online.
