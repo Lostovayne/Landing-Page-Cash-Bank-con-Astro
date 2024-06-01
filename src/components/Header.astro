@@ -28,12 +28,15 @@ import Button from "./Button.astro";
     </div>
   </div>
   <div class="relative hidden lg:block w-full aspect-square overflow-hidden">
-    <img
+    <Image
       src="/images/Card.svg"
       alt="header-info-cards"
       class="absolute inset-0 object-cover w-full h-full"
-      width={1200}
-      height={1200}
+      width={1100}
+      height={1100}
+      quality={100}
+      format="svg"
+      loading="eager"
     />
   </div>
 </section>
