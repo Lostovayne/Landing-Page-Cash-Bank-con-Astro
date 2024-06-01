@@ -7,6 +7,9 @@ Este proyecto es una Landing Page para un proyecto de banco e inversiones online
 
 ![image](https://github.com/Casadjes/Landing-Page-Cash-Bank-con-Astro/assets/115717042/83187c98-7886-4866-8d91-6354f1381d9a)
 
+## Rendimiento
+![rendimiento](https://github.com/Casadjes/Landing-Page-Cash-Bank-con-Astro/assets/115717042/f79a117c-1b7d-44b7-b163-012cf31de541)
+
 
 ## Instalación
 1. Clona este repositorio en tu máquina local.
