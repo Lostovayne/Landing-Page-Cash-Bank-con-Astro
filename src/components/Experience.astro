@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 <section
   class="flex flex-col lg:flex-row justify-evenly items-center max-w-screen-2xl mx-auto mt-32 2xl:px-16"
 >
-  <!--left side -->
+  <!-- left side -->
   <div class="w-full lg:w-1/2 relative">
     <Image
       src="/images/experienceImg.webp"
@@ -13,38 +13,38 @@ import { Image } from "astro:assets";
       width={600}
       height={450}
       quality={100}
-      class={"rounded-3xl  object-cover"}
+      class="rounded-3xl object-cover w-full h-80 lg:h-full"
     />
     <Image
-      src={"/images/TotalInvoice.svg"}
+      src="/images/TotalInvoice.svg"
       alt="total-invoice"
       width={400}
       height={250}
       quality={100}
-      class="absolute bottom-6 xl:bottom-8 right-0 xl:right-3 2xl:right-6 rounded-xl drop-shadow-lg max-md:w-48"
+      class="absolute bottom-6 lg:bottom-8 right-0 lg:right-3 2xl:right-6 rounded-xl drop-shadow-lg max-md:w-48 hidden md:block"
     />
   </div>
-  <!--right side -->
+  <!-- right side -->
   <div
-    class="w-full lg:w-1/2 flex space-y-6 flex-col justify-between px-3 py-10"
+    class="w-full lg:w-1/2 flex flex-col justify-between pl-6 py-10 space-y-6"
   >
     <h2
-      class="text-textPrimary font-extrabold text-5xl leading-snug text-balance max-w-xl"
+      class="text-textPrimary font-extrabold text-4xl md:text-5xl leading-snug text-balance max-w-xl"
     >
       Have Experience In World Bank
     </h2>
     <p
-      class="text-textSecondary font-medium text-base leading-loose text-balance"
+      class="text-textSecondary font-medium text-base md:text-lg leading-loose text-pretty"
     >
-      we have more than 15 years of experience in the field and have a number of
-      users in various countries around the world and are also suported in
-      various foreign languages
+      We have more than 15 years of experience in the field and have a number of
+      users in various countries around the world and are also supported in
+      various foreign languages.
     </p>
-    <!-- cards-->
-    <div class="flex justify-around text-center">
-      <!-- card 1-->
+    <!-- cards -->
+    <div class="flex flex-wrap justify-around text-center gap-4">
+      <!-- card 1 -->
       <div
-        class="p-2 flex flex-col min-w-24 sm:justify-center gap-3 w-24 sm:w-40 sm:h-40"
+        class="p-4 flex flex-col items-center gap-3 w-32 md:w-36 bg-white rounded-lg shadow-md"
       >
         <span class="text-4xl md:text-5xl font-extrabold text-textPrimary"
           >15</span
@@ -53,18 +53,18 @@ import { Image } from "astro:assets";
           >Years experience</span
         >
       </div>
-      <!-- card 2-->
+      <!-- card 2 -->
       <div
-        class="p-2 flex flex-col min-w-24 sm:justify-center gap-3 h-auto w-24 sm:w-40 sm:h-40 bg-gradient-to-br from-primary to-secondary rounded-xl"
+        class="p-4 flex flex-col items-center gap-3 w-32 md:w-36 bg-gradient-to-br from-primary to-secondary rounded-lg shadow-md"
       >
         <span class="text-4xl md:text-5xl font-extrabold text-white">20k</span>
         <span class="text-base md:text-lg font-medium text-white"
           >Local Customer</span
         >
       </div>
-      <!-- card 3-->
+      <!-- card 3 -->
       <div
-        class="p-2 flex flex-col min-w-24 sm:justify-center gap-3 h-auto w-24 sm:w-40 sm:h-40"
+        class="p-4 flex flex-col items-center gap-3 w-32 md:w-36 bg-white rounded-lg shadow-md"
       >
         <span class="text-4xl md:text-5xl font-extrabold text-textPrimary"
           >30+</span
