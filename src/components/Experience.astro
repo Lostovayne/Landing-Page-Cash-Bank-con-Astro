@@ -1,7 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import ExperienceImg from "../assets/ExperienceImg.svg"
-import TotalInvoice from "../assets/TotalInvoice.svg"
 ---
 
 <section
@@ -10,7 +8,7 @@ import TotalInvoice from "../assets/TotalInvoice.svg"
   <!-- left side -->
   <div class="w-full lg:w-1/2 relative">
     <Image
-      src={ExperienceImg}
+      src="../assets/ExperienceImg.svg"
       alt="Imagen de usuarios experimentando la app"
       width={600}
       height={450}
@@ -21,7 +19,7 @@ import TotalInvoice from "../assets/TotalInvoice.svg"
       class="rounded-3xl object-cover w-full h-80 lg:h-full"
     />
     <Image
-      src={TotalInvoice}
+      src="../assets/TotalInvoice.svg"
       alt="total-invoice"
       width={400}
       height={250}
