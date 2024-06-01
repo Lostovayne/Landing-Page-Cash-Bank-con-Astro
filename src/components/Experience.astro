@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import ExperienceImg from "../assets/ExperienceImg.svg"
 ---
 
 <section
@@ -9,20 +8,24 @@ import ExperienceImg from "../assets/ExperienceImg.svg"
   <!-- left side -->
   <div class="w-full lg:w-1/2 relative">
     <Image
-      src={ExperienceImg}
+      src="/images/ExperienceImg.svg"
       alt="Imagen de usuarios experimentando la app"
       width={600}
       height={450}
       quality={100}
       format="svg"
+      loading="lazy"
+      decoding="async"
       class="rounded-3xl object-cover w-full h-80 lg:h-full"
     />
     <Image
-      src="../assets/TotalInvoice.svg"
+      src="/images/TotalInvoice.svg"
       alt="total-invoice"
       width={400}
       height={250}
       quality={100}
+      format="svg"
+      loading="eager"
       class="absolute bottom-6 lg:bottom-8 right-0 lg:right-3 2xl:right-6 rounded-xl drop-shadow-lg max-md:w-48 hidden md:block"
     />
   </div>
