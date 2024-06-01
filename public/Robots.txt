@@ -1,0 +1,24 @@
+# All robots will spider the domain
+User-agent: *
+Disallow:
+
+# Disallow directory /private/
+Disallow: /private/
+
+# Disallow file type .zip
+Disallow: /*.zip$
+
+# Disallow the access to the admin page
+Disallow: /admin/
+
+# Disallow the access to the login page
+Disallow: /login/
+
+# Allow the access to the public directory
+Allow: /public/
+
+# Sitemap location
+Sitemap: https://cash-bank.pages.dev/sitemap.xml
+
+# Delay between successive requests from the same server
+Crawl-delay: 10
