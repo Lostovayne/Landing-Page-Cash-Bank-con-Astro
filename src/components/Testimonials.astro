@@ -5,7 +5,13 @@ import TestimonialCard from "./TestimonialCard.astro";
 const { sliderPerViews, spaceBetween } = Astro.props;
 ---
 
-<div class="mx-auto max-w-screen-2xl px-5 bg-red-200">
+<div class="mx-auto max-w-screen-2xl py-16 mt-28 px-5 bg-[#F8F8FA]">
+  <h2
+    class="capitalize text-center text-[#2B2D42] mb-12 font-extrabold text-4xl"
+  >
+    what our users say
+  </h2>
+
   <swiper-container
     class="mySwiper overflow-hidden flex"
     pagination="true"
@@ -14,7 +20,7 @@ const { sliderPerViews, spaceBetween } = Astro.props;
     space-between={spaceBetween}
     free-mode="true"
     centered-slides="true"
-    autoplay-delay="2500"
+    autoplay-delay="2700"
     autoplay-disable-on-interaction="false"
     loop="true"
   >
@@ -38,7 +44,6 @@ const { sliderPerViews, spaceBetween } = Astro.props;
   swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,5 +57,6 @@ const { sliderPerViews, spaceBetween } = Astro.props;
   }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+<script
+  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
 ></script>
