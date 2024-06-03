@@ -25,13 +25,11 @@ const { sliderPerViews, spaceBetween } = Astro.props;
     loop="true"
   >
     {
-      TestimonialData.map(() => {
-        return (
-          <swiper-slide>
-            <TestimonialCard />
-          </swiper-slide>
-        );
-      })
+      TestimonialData.map((testimonial) => (
+        <swiper-slide key={testimonial.name}>
+          <TestimonialCard {...testimonial} />
+        </swiper-slide>
+      ))
     }
   </swiper-container>
 </div>

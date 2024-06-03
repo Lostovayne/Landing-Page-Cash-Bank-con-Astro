@@ -1,21 +1,43 @@
-type Testimonial = Array<{ title: string; description: string; rating?: number }>;
+type Testimonial = Array<{
+  image: string;
+  opinion: string;
+  name: string;
+  rating?: number;
+  job: string;
+}>;
 
 export const TestimonialData: Testimonial = [
   {
-    title: "Testimonial 1",
-    description: "Testimonial 1 description",
+    image: "/images/TestimonialImg1.svg",
+    opinion:
+      "Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is ",
+    name: "Wade Warren",
+    job: "Ceo Google.Inc",
+    rating: 5,
   },
   {
-    title: "Testimonial 2",
-    description: "Testimonial 2 description",
+    image: "/images/TestimonialImg2.svg",
+    opinion:
+      "Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is ",
+    name: "Esther Howard",
+    job: "Ceo Google.Inc",
+    rating: 5,
   },
   {
-    title: "Testimonial 3",
-    description: "Testimonial 3 description",
+    image: "/images/TestimonialImg3.svg",
+    opinion:
+      "Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is ",
+    name: "Robert Fox",
+    job: "Ceo Google.Inc",
+    rating: 5,
   },
   {
-    title: "Testimonial 4",
-    description: "Testimonial 4 description",
+    image: "/images/TestimonialImg4.svg",
+    opinion:
+      "Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is ",
+    name: "Kristin Watson",
+    job: "Ceo Google.Inc",
+    rating: 5,
   },
 ];
 
@@ -38,7 +60,7 @@ export const Services = [
   },
 ];
 
- export const Company = [
+export const Company = [
   {
     name: "About",
     href: "/",
