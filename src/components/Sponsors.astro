@@ -2,40 +2,106 @@
 import { Image } from "astro:assets";
 ---
 
-<div class="flex flex-row max-md:gap-6 flex-wrap justify-around items-center py-2 px-3">
-  <Image
-    src="/images/slack.webp"
-    alt="Sponsors"
-    width={120}
-    height={30}
-    class="h-9 w-28 object-contain"
-  />
-  <Image
-    src="/images/netflix.webp"
-    alt="Sponsors"
-    width={120}
-    height={30}
-    class="h-9 w-28 object-contain"
-  />
-  <Image
-    src="/images/google.webp"
-    alt="Sponsors"
-    width={120}
-    height={30}
-    class="h-9 w-28 object-contain"
-  />
-  <Image
-    src="/images/airbnb.webp"
-    alt="Sponsors"
-    width={120}
-    height={30}
-    class="h-9 w-28 object-contain"
-  />
-  <Image
-    src="/images/uber.webp"
-    alt="Sponsors"
-    width={120}
-    height={80}
-    class="h-9 w-28 object-contain"
-  />
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer components {
+    .wrapper {
+      @apply w-[90%] max-w-[1536px] mx-auto relative h-9 mt-5 overflow-hidden;
+      mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0)
+      );
+    }
+
+    .item {
+      @apply w-28 h-9 absolute animate-scrollLeft;
+      left: max(calc(200px * 8), 100%);
+    }
+
+    .item1 {
+      animation-delay: calc(15s / 8 * (8 - 1) * -1);
+    }
+
+    .item2 {
+      animation-delay: calc(15s / 8 * (8 - 2) * -1);
+    }
+
+    .item3 {
+      animation-delay: calc(15s / 8 * (8 - 3) * -1);
+    }
+
+    .item4 {
+      animation-delay: calc(15s / 8 * (8 - 4) * -1);
+    }
+
+    .item5 {
+      animation-delay: calc(15s / 8 * (8 - 5) * -1);
+    }
+
+    .item6 {
+      animation-delay: calc(15s / 8 * (8 - 6) * -1);
+    }
+
+    .item7 {
+      animation-delay: calc(15s / 8 * (8 - 7) * -1);
+    }
+
+    .item8 {
+      animation-delay: calc(15s / 8 * (8 - 8) * -1);
+    }
+  }
+</style>
+
+<div class="wrapper">
+  <div class="item item1">
+    <Image
+      src="/images/slack.webp"
+      alt="Sponsors"
+      width={120}
+      height={30}
+      class="h-9 w-28 object-contain"
+    />
+  </div>
+  <div class="item item2">
+    <Image
+      src="/images/netflix.webp"
+      alt="Sponsors"
+      width={120}
+      height={30}
+      class="h-9 w-28 object-contain"
+    />
+  </div>
+  <div class="item item3">
+    <Image
+      src="/images/google.webp"
+      alt="Sponsors"
+      width={120}
+      height={30}
+      class="h-9 w-28 object-contain"
+    />
+  </div>
+  <div class="item item4">
+    <Image
+      src="/images/airbnb.webp"
+      alt="Sponsors"
+      width={120}
+      height={30}
+      class="h-9 w-28 object-contain"
+    />
+  </div>
+  <div class="item item5">
+    <Image
+      src="/images/uber.webp"
+      alt="Sponsors"
+      width={120}
+      height={80}
+      class="h-9 w-28 object-contain"
+    />
+  </div>
 </div>

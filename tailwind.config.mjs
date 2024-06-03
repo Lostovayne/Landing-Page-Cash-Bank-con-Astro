@@ -9,6 +9,14 @@ export default {
         textPrimary: "#183B56",
         textSecondary: "#5A7184",
       },
+      keyframes: {
+        scrollLeft: {
+          to: { left: "-200px" },
+        },
+      },
+      animation: {
+        scrollLeft: "scrollLeft 15s linear infinite",
+      },
     },
   },
   plugins: [],
