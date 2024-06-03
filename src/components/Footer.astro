@@ -1,6 +1,7 @@
 ---
 import FooterItem from "./FooterItem.astro";
 import FooterImg from "./FooterImg.astro";
+import Arrow from "../icons/Arrow.astro";
 import { Company, Services } from "../data";
 ---
 
@@ -9,7 +10,7 @@ import { Company, Services } from "../data";
   <div
     class="relative flex justify-around items-center mx-5 xl:mx-36 top-24 xl:top-36 p-2.5 h-52 rounded-2xl bg-gradient-to-r from-[#125376] to-[#17637f] overflow-hidden"
   >
-    <h3 class="text-white font-bold text-[clamp(20px,5vw,32px)] leading-[50px]">
+    <h3 class="text-white font-bold text-[clamp(20px,5vw,32px)] leading-12">
       Manage Your Finances With Cashback
     </h3>
     <div
@@ -20,22 +21,37 @@ import { Company, Services } from "../data";
       class="absolute bottom-[-120px] right-[-100px] w-52 h-52 rounded-full bg-[rgba(240,248,255,0.137)]"
     >
     </div>
+
     <button
-      class="w-36 h-10 border-none text-[clamp(4px,3vw,16px)] bg-white rounded-lg font-semibold text-[#1b7b77]"
+      type="button"
+      class="hidden md:block w-36 h-10 border-none text-[clamp(4px,3vw,16px)] bg-white rounded-lg font-semibold text-[#1b7b77]"
       >Read More</button
     >
+
+    <Arrow
+      class:list={[
+        "h-10",
+        "bg-white",
+        "rounded-full",
+        "min-w-10",
+        "text-red-200",
+        "md:hidden",
+      ]}
+    />
   </div>
 
   <!-- Footer -->
   <footer
     class="w-full h-auto xl:h-[500px] md:h-[600px] sm:h-[1100px] flex flex-col justify-center items-center p-5 bg-gradient-to-r from-[#2aa6da] to-[#1b7b77]"
   >
-    <div class="w-[88%] flex flex-wrap gap-10 justify-center mt-12 sm:pt-[100px]">
+    <div
+      class="w-[88%] flex flex-wrap gap-10 justify-center mt-12 sm:pt-[100px]"
+    >
       <div class="flex-grow text-white p-7.5 w-full md:w-auto">
         <h2 class="py-5 text-2xl font-bold md: pt-[40px]">CashBank</h2>
         <p class="max-w-lg text-sm md:text-base font-normal text-pretty">
-          Cashbank is a service or electronic wallet that interacts with various platforms
-          around the world
+          Cashbank is a service or electronic wallet that interacts with various
+          platforms around the world
         </p>
       </div>
       <div class="flex-grow text-white p-7.5 w-full md:w-auto">
