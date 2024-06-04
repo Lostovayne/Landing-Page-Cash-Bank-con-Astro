@@ -4,12 +4,11 @@ Este proyecto es una Landing Page para un proyecto de banco e inversiones online
 
 
 ## Demo
-
-![demo page img](https://github.com/Casadjes/Landing-Page-Cash-Bank-con-Astro/assets/115717042/8f2002fa-b616-4a11-9008-6e72fd1ce4c3)
-
+![demo](https://github.com/Lostovayne/Landing-Page-Cash-Bank-con-Astro/assets/115717042/32c41530-14ca-4f86-bda7-865d72a686f9)
 
 ## Rendimiento
-![rendimiento](https://github.com/Casadjes/Landing-Page-Cash-Bank-con-Astro/assets/115717042/f79a117c-1b7d-44b7-b163-012cf31de541)
+![performance](https://github.com/Lostovayne/Landing-Page-Cash-Bank-con-Astro/assets/115717042/e97b202a-81ce-4044-b2a1-4ff1976458ed)
+
 
 
 ## Instalación
