@@ -1,5 +1,6 @@
 ---
 const { image, opinion, name, job, rating } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <div
@@ -27,7 +28,18 @@ const { image, opinion, name, job, rating } = Astro.props;
     <div class="w-1/2 flex items-center justify-end">
       {
         Array.from({ length: rating }, (_, i) => (
-          <img src="/images/star.svg" alt={`star-${i}`} />
+          <>
+            <Image
+              src="/images/star.svg"
+              alt={`star-${i}`}
+              width={400}
+              height={250}
+              quality={100}
+              format="svg"
+              loading="eager"
+              class="w-5 h-5 object-contain"
+            />
+          </>
         ))
       }
     </div>
